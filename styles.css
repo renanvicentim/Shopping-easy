@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-left {
+    display: inline-block;
+    width: 60%;
+    padding-left: 200px;
+    margin-top: 20%;
+}
+
+.container-right {
+    width: 40%;
+    height: 100vh;
+    display: inline-block;
+    background: rgb(93, 93, 125, 0.16);
+    position: absolute;
+}
+
+header {
+    margin: 24px 0 0 57px;
+}
+
+.line-header {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    color: #5D5D7D;
+    margin-right: 41px;
+    text-decoration: none;
+}
+
+.line-header:hover {
+    opacity: 0.5;
+}
+
+.line-work {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    color: #5D5D7D;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    margin-right: 41px;
+    text-decoration: none;
+}
+
+h1 {
+    width: 368px;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    color: #5D5D7D;
+    margin-bottom: 15px;
+}
+
+p {
+    width: 540px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #5D5D7D;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    background: #9499EA;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+.image-logo {
+    position: relative;
+    top: 20%;
+    right: 150px;
+}
+
+@media screen and (max-width:900px) {
+    
+    .wrapper {
+        padding: 1px;
+    }
+
+    .container-left {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .container-right {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 52px;
+        width:auto;
+        margin: 58px 50px 0 50px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;  
+        text-align: center;
+        margin: 15px 40px;
+        width: auto;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    header {
+        display: none;
+    }
+
+    .image-logo {
+        position: static;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:380px) {
+
+    .container-left {
+        height: 70%;
+    }
+}
